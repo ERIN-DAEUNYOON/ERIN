@@ -1,21 +1,21 @@
-'use strict';
+"use strict";
 
 module.exports = {
-  url: 'https://yeri-kim.github.io/',
-  title: 'Blog by Yeri',
-  subtitle: 'hello world',
-  copyright: '',
-  disqusShortname: 'github-io-12',
+  url: "https://taeho-jo-github.io/",
+  title: "Blog by taeho",
+  subtitle: "hello world",
+  copyright: "",
+  disqusShortname: "github-io-12",
   postsPerPage: 6,
-  googleAnalyticsId: 'UA-139726433-1',
+  googleAnalyticsId: "UA-139726433-1",
   menu: [
     {
-      label: 'Articles',
-      path: '/'
+      label: "Articles",
+      path: "/"
     },
     {
-      label: 'About me',
-      path: '/pages/about'
+      label: "About me",
+      path: "/pages/about"
     }
     /*
     ,
@@ -26,13 +26,13 @@ module.exports = {
     */
   ],
   author: {
-    name: 'Yeri',
-    photo: '/profile.png',
-    bio: '',
+    name: "Taeho",
+    photo: "/profile.png",
+    bio: "",
     contacts: {
-      email: 'yerikim1028@gmail.com',
-      github: 'Yeri-Kim',
-      linkedIn: 'yeri-kim-1028'
+      email: "yerikim1028@gmail.com",
+      github: "Yeri-Kim",
+      linkedIn: "yeri-kim-1028"
     }
   }
 };
