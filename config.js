@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-  url: "https://taeho-jo-github.io/",
+  url: "https://taeho-jo.github.io/",
   title: "Blog by taeho",
   subtitle: "hello world",
   copyright: "",
