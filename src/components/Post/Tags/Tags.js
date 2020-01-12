@@ -1,8 +1,8 @@
 // @flow
-import React from 'react';
-import { Link } from 'gatsby';
-import cx from 'classnames';
-import styles from './Tags.module.scss';
+import React from "react";
+import { Link } from "gatsby";
+import cx from "classnames";
+import styles from "./Tags.module.scss";
 
 type Props = {
   tags: string[],
@@ -11,39 +11,40 @@ type Props = {
 };
 
 const Tags = ({ tags, tagSlugs, inSidebar }: Props) => (
-  <div className={styles['tags']}>
-    <ul className={styles['tags__list']}>
-      {tagSlugs && tagSlugs.map((slug, i) => (
-        <li
-          className={cx(
-            styles['tags__list-item'],
-            inSidebar && styles['tags_insidebar__list-item']
-          )}
-          key={tags[i]}
-        >
-          <Link
-            to={slug}
+  <div className={styles["tags"]}>
+    <ul className={styles["tags__list"]}>
+      {tagSlugs &&
+        tagSlugs.map((slug, i) => (
+          <li
             className={cx(
-              styles['tags__list-item-link'],
-              inSidebar && styles['tags_insidebar__list-item-link']
+              styles["tags__list-item"],
+              inSidebar && styles["tags_insidebar__list-item"]
             )}
+            key={tags[i]}
           >
-            {tags[i]}
-          </Link>
-        </li>
-      ))}
-      {['wecode', '위코드', '코딩부트캠프', 'it학원', '코딩학원'].map((name) => (
+            <Link
+              to={slug}
+              className={cx(
+                styles["tags__list-item-link"],
+                inSidebar && styles["tags_insidebar__list-item-link"]
+              )}
+            >
+              {tags[i]}
+            </Link>
+          </li>
+        ))}
+      {["wecode"].map(name => (
         <li
           className={cx(
-            styles['tags__list-item'],
-            inSidebar && styles['tags_insidebar__list-item']
+            styles["tags__list-item"],
+            inSidebar && styles["tags_insidebar__list-item"]
           )}
           key={name}
         >
           <span
             className={cx(
-              styles['tags__list-item-link'],
-              inSidebar && styles['tags_insidebar__list-item-link']
+              styles["tags__list-item-link"],
+              inSidebar && styles["tags_insidebar__list-item-link"]
             )}
           >
             {name}
