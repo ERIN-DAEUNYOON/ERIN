@@ -27,12 +27,12 @@ module.exports = {
   ],
   author: {
     name: "Taeho",
-    photo: "/profile.png",
+    photo: "/profile2.jpg",
     bio: "",
     contacts: {
-      email: "yerikim1028@gmail.com",
-      github: "Yeri-Kim",
-      linkedIn: "yeri-kim-1028"
+      email: "jotang3726@gmail.com",
+      github: "taeho-jo",
+      linkedIn: ""
     }
   }
 };
