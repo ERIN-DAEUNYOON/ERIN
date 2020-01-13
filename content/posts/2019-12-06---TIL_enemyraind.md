@@ -1,6 +1,6 @@
 ---
-title: 191208_TIL_Enemy-rain day2
-date: "2019-12-08T22:40:32.169Z"
+title: 191206_TIL_Enemy-rain day2
+date: "2019-12-06T22:40:32.169Z"
 template: "post"
 draft: false
 slug: "/posts/enemy2"

@@ -1,68 +1,76 @@
 ---
-title: 191207_TIL_Enemy-rain day1
+title: 191207_TIL_Enemy-rain day3
 date: "2019-12-07T22:40:32.169Z"
 template: "post"
 draft: false
-slug: "/posts/enemyrain1"
+slug: "/posts/enemy3"
 category: "TIL"
-description: "Image Sprite, parseInt"
+description: "setInterval, setTimeout"
 tags:
   - "JavaScript"
   - "TIL"
 ---
 
-# 1. Problems & Solution
+# 1. setInterval() / clearInterval()
+
+- setInterval() : 일정한 시간 간격으로 작업을 수행하기 위해서 사용하게 된다. setInterval 함수를 중지하긱 위해서 clearInterval 함수를 사용할 수 있다. 주의할 점은 일정한 시간 간격으로 실행되는 작업이 그 시간 간격보다 오래걸릴 경우에 문제가 발생할 수 있다.
+- setInterval의 기본 문법
+
+```javascript
+setInterval(function() {
+  //수행할 작업
+}, 1000); //시간(ms으로 작성, 1000ms = 1초)
+```
+
+- 이미지를 일정한 간격으로 바꾸어 적용하는 경우 / 일정한 간격으로 배너광고를 보여주는 경우 / 일정 주기로 계속해서 서버와 통신이 필요한 경우 <---이 외에도 굉장히 많이 사용된다.
+
+```javascript
+setInterval(function() {
+  const newGhost = new Enemy();
+}, 1000); //시간(ms으로 작성)
+// class에 있는 귀신 생성 함수를 1초에 한번 씩 반복 생성
+```
+
+# 2. setTimeout() / clearTimeout()
+
+- setTimeout() : 일정한 시간 후에 작업을 호출한다. setInterval과 달리 지정된 시간을 기다린 후에 작업을 수행하게 되고, 다시 일정한 시간을 기다린 후에 작업을 수행하게 되는 방식이다. clearTimeout을 이용하여 작업을 중지할 수있다.
+- clearTimeout() / clearInterval() 은 실행중인 작업을 중지시키는 것이아니라 실행된 이후의 다음 작업스케줄이 중지 되는 것이다.
+- setTimeout의 기본 문법
+
+```javascript
+setTimeout(function() {
+  //수행할 작업
+}, 1000);
+```
+
+# 3. Problems & Solution
 
 ### 1. problems
 
-1. hero의 left value 의 type이 string. number로 변화하여 계산.
+1.  ghost의 움직임이 멈추고 image까지 바뀌었지만 사라지지 않는다.
 
-2. image sprite
+2.  hero & ghost 가 만나는 겹치는? 충돌? 하는 부분의 설정.
 
 ### 2. solution
 
-1. parsInt를 사용하여 string에서 number로 변화하여 사용하였다
+1.  ghost가 생성되었을 때 appendChild 했던 것과 반대로 removeChild를 이용한다. ghost가 생성되고 일정 시간이 지난 후에 사라질 수 있도록 setTimeout으로 설정하였다.
 
 ```javascript
-let heroLeftValue = parseInt(heroStyle.left);
-console.log(heroLeftValue); // px를 제외한 value를 반환
-$hero.style.left = heroLeftValue - 10 + "px";
-// number 끼리 계산을 해주고 'px'를 더해서 이동
+setTimeout(function() {
+  $background2.removeChild($ghost);
+}, 10000);
 ```
 
-2. background-position 속성을 이용하였다. 아래에서 자세히 알아보겠다.
-
-# 2. Image Sprites(background-position)
-
-- Image Sprites는 하나의 이미지 안에 들어 있는 이미지들의 모음이다. 많은 이미지를 로드하려면 오랜 시간이 걸리고, 서버에 여러번 요청을 해야한다. Image Sprites를 사용하면 서버의 요청 수를 감소시키게 된다.
-
-![hero.png](https://images.velog.io/post-images/jotang/9af51150-190e-11ea-9838-d539f766794d/hero.png)
-
-- hero 한명의 width를 계산하여 div를 생성하고 CSS에서 background-image를 이요하여 배경화면으로 image를 삽입한다.
-- background-position 속성을 이용하여 image의 위치를 변경한다.
-
-![KakaoTalk_20191208_013747248.jpg](https://images.velog.io/post-images/jotang/050c8860-1910-11ea-9838-d539f766794d/KakaoTalk20191208013747248.jpg)
+2. hero의 left 값과 ghost의 left 값을 가져온다. ghost.left의 value가 hero.left의 value 보다 크거나 ghost.left의 value가 heor.left + width보다 작다면 서로 겹쳐있다는 계산이 나오게 된다. 이렇게 되었을 때 는 ghost가 땅으로 닿기도 전에 죽는 이미지로 변하기 때문에 Y축 값도 설정해준다. 이 때 는 ghost는 bottom 에서 0px에 위치하고 죽어있는 이미지로 바꾼다.
 
 ```javascript
-.hero {
-  background-positon : 0 0;
+if (
+  560 > ghostTop &&
+  490 < ghostTop &&
+  left > parseInt(hero2Style.left) &&
+  left < parseInt(hero2Style.left) + 60
+) {
+  $ghost.style.bottom = "0px";
+  $ghost.style.backgroundPosition = "-45px 6px";
 }
-//CSS 사용법. background-positionX, background-positionY 를 사용하여 각각 값을 입력할 수 있다.
-$hero.style.backgroundPosition = '-70px 0'
-//JavaScript 사용법. 역시 backgroundPositionX,backgroundPositionY 사용가능 하다.
 ```
-
-# 3. parseInt
-
-```javascript
-let heroLeftValue = parseInt(heroStyle.left);
-//hero의 left value를 number로 반환한다.
-let ghostTop = parseInt(ghostTopValue.top);
-//ghost의 top value를 number로 반환한다.
-```
-
-- parseInt() 함수는 string의 구문을 분석하여 특정 진수의 정수를 반환한다. 여기서 특정 진수는 수의 진법 체계에 기준이 되는 값을 말한다.
-  `parseInt(string, radix);`
-- string: 분석할 value. string이 아니면 string으로 변환한다. string의 앞 공백은 무시한다.
-- radix: string이 표현하는 정수를 나타내는 2와 36사이의 진수/
-  > https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/parseInt
