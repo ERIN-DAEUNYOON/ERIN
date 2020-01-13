@@ -1,6 +1,6 @@
 ---
 title: 191203_TIL_Instargram clone
-date: "2019-12-02T22:40:32.169Z"
+date: "2019-12-03T22:40:32.169Z"
 template: "post"
 draft: false
 slug: "/posts/insta-main"
@@ -35,13 +35,13 @@ tags:
   - rem의 r은 'root'(최상위)를 뜻한다.
   - rem은 grid system에 유용하게 사용 가능하다.
   - em의 경우 몇 px로 변환될지에 영향을 주는 변수가 많기 때문이다. em을 많이 사용하게 되면 재사용이 어렵고 유지보수가 힘들어지는 경향이있다.
-  ````css
+  ```css
   {
     font-size: 20px;
     width: 10em; /* 200px */
     width: 10rem; /* 160px - html의 font-size */
   `
-  ````
+  ```
 - **font-absolute length**(절대 길이)
   - px, in, cm, mm : 절대길이
 - **vh & vw (vertical height & vertical width)**
