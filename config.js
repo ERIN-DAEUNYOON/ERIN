@@ -5,8 +5,8 @@ module.exports = {
   title: "Blog by taeho",
   subtitle: "hello world",
   copyright: "",
-  disqusShortname: "github-io-12",
-  postsPerPage: 6,
+  disqusShortname: "TaehoJo",
+  postsPerPage: 6,xx
   googleAnalyticsId: "UA-139726433-1",
   menu: [
     {
