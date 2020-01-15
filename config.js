@@ -6,7 +6,7 @@ module.exports = {
   subtitle: "hello world",
   copyright: "",
   disqusShortname: "TaehoJo",
-  postsPerPage: 6,xx
+  postsPerPage: 6,
   googleAnalyticsId: "UA-139726433-1",
   menu: [
     {
