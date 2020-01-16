@@ -1,5 +1,5 @@
 ---
-title: 200114_TIL_justSell Project no.9
+title: 200114_TIL_justSell Project day.9
 date: "2020-01-14T22:40:32.169Z"
 template: "post"
 draft: false
