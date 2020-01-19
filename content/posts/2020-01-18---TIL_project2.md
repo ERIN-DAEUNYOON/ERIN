@@ -1,6 +1,6 @@
 ---
 title: 200118_TIL_justSell Project
-date: "2020-01-18T22:40:32.169Z"
+date: "2020-01-18T13:40:32.169Z"
 template: "post"
 draft: false
 slug: "/posts/project2"

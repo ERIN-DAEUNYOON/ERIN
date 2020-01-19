@@ -1,6 +1,6 @@
 ---
 title: 200117_TIL_Fetch & useEffect
-date: "2020-01-17T22:40:32.169Z"
+date: "2020-01-17T12:40:32.169Z"
 template: "post"
 draft: false
 slug: "/posts/useEffect"

@@ -1,6 +1,6 @@
 ---
 title: 200106_TIL_unit test & Git rebase
-date: "2020-01-06T22:40:32.169Z"
+date: "2020-01-06T12:40:32.169Z"
 template: "post"
 draft: false
 slug: "/posts/rebase"

@@ -1,6 +1,6 @@
 ---
 title: 200108_TIL_Data Sturcture2
-date: "2020-01-08T22:40:32.169Z"
+date: "2020-01-08T12:40:32.169Z"
 template: "post"
 draft: false
 slug: "/posts/sturcture2"

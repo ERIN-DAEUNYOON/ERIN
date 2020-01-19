@@ -1,6 +1,6 @@
 ---
 title: 191203_TIL_Instargram clone
-date: "2019-12-03T22:40:32.169Z"
+date: "2019-12-03T12:40:32.169Z"
 template: "post"
 draft: false
 slug: "/posts/insta-main"

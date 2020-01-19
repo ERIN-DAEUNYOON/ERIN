@@ -1,6 +1,6 @@
 ---
 title: 191215_TIL_Database/SQL
-date: "2019-12-15T22:40:32.169Z"
+date: "2019-12-15T12:40:32.169Z"
 template: "post"
 draft: false
 slug: "/posts/Authintication"

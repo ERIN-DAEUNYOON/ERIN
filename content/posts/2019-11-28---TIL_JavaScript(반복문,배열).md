@@ -1,6 +1,6 @@
 ---
 title: 191128_TIL_JavaScript
-date: "2019-11-28T22:40:32.169Z"
+date: "2019-11-28T12:40:32.169Z"
 template: "post"
 draft: false
 slug: "/posts/JS-if-array/"

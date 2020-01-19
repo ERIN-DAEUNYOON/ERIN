@@ -1,6 +1,6 @@
 ---
 title: 191127_TIL_JavaScript
-date: "2019-11-27T22:40:32.169Z"
+date: "2019-11-27T12:40:32.169Z"
 template: "post"
 draft: false
 slug: "/posts/JS-for"

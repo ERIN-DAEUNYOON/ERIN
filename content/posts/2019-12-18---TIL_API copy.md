@@ -1,6 +1,6 @@
 ---
 title: 191218_TIL_AJAX/API/JWT
-date: "2019-12-18T22:40:32.169Z"
+date: "2019-12-18T12:40:32.169Z"
 template: "post"
 draft: false
 slug: "/posts/AJAXAPI"
