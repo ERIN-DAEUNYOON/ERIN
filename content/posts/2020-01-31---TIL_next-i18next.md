@@ -1,6 +1,6 @@
 ---
-title: 200201_TIL_next.js에서 언어전환하기
-date: "2020-02-01T13:40:32.169Z"
+title: 200131_TIL_next.js에서 언어전환하기
+date: "2020-01-31T13:40:32.169Z"
 template: "post"
 draft: false
 slug: "/posts/nexti18next"
