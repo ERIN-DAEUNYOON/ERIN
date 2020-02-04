@@ -1,8 +1,8 @@
 "use strict";
 
 module.exports = {
-  url: "https://taeho-jo.github.io/",
-  title: "Blog by taeho",
+  url: "https://ERIN-DAEUNYOON.github.io/",
+  title: "Blog by DDANI",
   subtitle: "hello world",
   copyright: "",
   disqusShortname: "TaehoJo",
@@ -30,8 +30,8 @@ module.exports = {
     photo: "/profile2.jpg",
     bio: "",
     contacts: {
-      email: "jotang3726@gmail.com",
-      github: "taeho-jo",
+      email: "daeunyoon107@gmail.com ",
+      github: "ERIN-DAEUNYOON",
       linkedIn: ""
     }
   }

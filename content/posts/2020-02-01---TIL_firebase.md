@@ -2,7 +2,7 @@
 title: 200201_TIL_firebase_login
 date: "2020-02-01T13:40:32.169Z"
 template: "post"
-draft: false
+draft: true
 slug: "/posts/firebaselogin"
 category: "TIL"
 description: "email, google 로그인! 회원가입까지"

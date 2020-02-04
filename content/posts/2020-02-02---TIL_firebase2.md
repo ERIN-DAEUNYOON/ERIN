@@ -2,7 +2,7 @@
 title: 200202_TIL_firebase_login2
 date: "2020-02-02T13:40:32.169Z"
 template: "post"
-draft: false
+draft: true
 slug: "/posts/firebaselogin2"
 category: "TIL"
 description: "facebook 로그인과 feature function관리"

@@ -1,9 +1,9 @@
 ---
-title: 200131_TIL_next.js에서 언어전환하기
+title: 테호님꺼 클론
 date: "2020-01-31T13:40:32.169Z"
 template: "post"
 draft: false
-slug: "/posts/nexti18next"
+slug: "/posts/first-blog"
 category: "TIL"
 description: "next-i18next 라이브러리를 적용해보자"
 tags:
